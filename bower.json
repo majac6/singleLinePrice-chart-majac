@@ -23,5 +23,6 @@
   ],
   "dependencies": {
     "d3": "^4.2.2"
-  }
+  },
+  private: false
 }
