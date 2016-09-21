@@ -5,13 +5,23 @@
     "majac <majac6@gmail.com>"
   ],
   "description": "",
-  "main": "build/singleLingPrice-chart-majac.js",
+  "main": "",
   "keywords": [
-    "singlelinechart",
     "chart",
     "majac",
-    "pricechart"
+    "singleLinePriceChart",
+    "bakcha"
   ],
   "license": "MIT",
-  "private": true
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "d3": "^4.2.2"
+  }
 }
