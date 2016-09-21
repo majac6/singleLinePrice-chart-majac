@@ -289,11 +289,11 @@ var singleLinePriceChart = function(options) {
     .attr("x", function() {
       return px * ((options.range.min - options.axis.min) / (options.axis.max - options.axis.min)) + 'px';
     })
-    .attr("y", axisY - 15)
+    .attr("y", axisY - 5)
     .attr("font-family", "sans-serif")
-    .attr("font-size", "18px")
+    .attr("font-size", "10px")
     .attr("fill", options.color.active)
-    .style('font-weight', 'bold')
+    
     .attr("text-anchor", "middle");
     // 상품 평균가격 최소가(range.min)
 
@@ -303,11 +303,11 @@ var singleLinePriceChart = function(options) {
     .attr("x", function() {
       return px * ((options.range.max - options.axis.min) / (options.axis.max - options.axis.min)) + 'px';
     })
-    .attr("y", axisY - 15)
+    .attr("y", axisY - 5)
     .attr("font-family", "sans-serif")
-    .attr("font-size", "18px")
+    .attr("font-size", "10px")
     .attr("fill", options.color.active)
-    .style('font-weight', 'bold')
+    
     .attr("text-anchor", "middle");
     // 상품 평균가격 최대가(range.max)
 
