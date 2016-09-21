@@ -13,7 +13,6 @@
     "bakcha"
   ],
   "license": "MIT",
-  "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
@@ -24,5 +23,4 @@
   "dependencies": {
     "d3": "^4.2.2"
   },
-  private: true
 }
