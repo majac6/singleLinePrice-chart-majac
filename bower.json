@@ -1,0 +1,17 @@
+{
+  "name": "singleLinePrice-chart-majac",
+  "homepage": "https://github.com/majac6/singleLinePrice-chart-majac",
+  "authors": [
+    "majac <majac6@gmail.com>"
+  ],
+  "description": "",
+  "main": "build/singleLingPrice-chart-majac.js",
+  "keywords": [
+    "singlelinechart",
+    "chart",
+    "majac",
+    "pricechart"
+  ],
+  "license": "MIT",
+  "private": true
+}
