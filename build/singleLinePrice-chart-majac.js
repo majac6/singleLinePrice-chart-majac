@@ -2,7 +2,7 @@ var singleLinePriceChart = function(options) {
 
   var chart = d3.select(options.targetID)
   .append('svg')
-  .attr('width', '700px')
+  .attr('width', '100%')
   .attr('height', '130px')
   .attr('id', options.thisID)
   .style('display', 'table')
@@ -238,12 +238,12 @@ var singleLinePriceChart = function(options) {
 
     if(trianglesCenter > 100) {
 
-      trianglesCenter -= 5;
+      trianglesCenter -= 15;
 
       chart
       .append('polygon')
       .attr('points', function() {
-        return trianglesCenter + ',' + (axisY - 50) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 55) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 45);
+        return trianglesCenter + ',' + (axisY - 50 - 2) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 55 - 2) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 45 - 2);
       })
       .attr('fill', options.color.active);
 
@@ -251,7 +251,7 @@ var singleLinePriceChart = function(options) {
       .append('polygon')
       .attr('points', function() {
         trianglesCenter -= 15;
-        return trianglesCenter + ',' + (axisY - 50) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 55) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 45);
+        return trianglesCenter + ',' + (axisY - 50 - 2) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 55 - 2) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 45 - 2);
       })
       .attr('fill', options.color.active);
 
@@ -259,7 +259,7 @@ var singleLinePriceChart = function(options) {
       .append('polygon')
       .attr('points', function() {
         trianglesCenter += 30;
-        return trianglesCenter + ',' + (axisY - 50) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 55) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 45);
+        return trianglesCenter + ',' + (axisY - 50 - 2) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 55 - 2) + ' ' + (trianglesCenter + 10) + ',' + (axisY - 45 - 2);
       })
       .attr('fill', options.color.active);
     }
