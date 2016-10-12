@@ -4,8 +4,13 @@ For use Bakcha Company app &amp; web
 </p>
 <h1>Single Line Price Chart</h1>
 
+<h2>Introduce</h2>
 <p>
-  How to get<br/>
+  - Dependency : <a href="http://jquery.com/" target="_blank">Jquery</a>, <a href="https://d3js.org/" target="">D3</a>
+</p>
+
+<h2>How to get</h2>
+<p>
   - NPM : npm i single-chart-majac<br/>
 </p>
 
