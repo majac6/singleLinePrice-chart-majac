@@ -231,12 +231,13 @@ var singleLinePriceChart = function(options) {
 
     // valueText, afterValueText 사이 삼각형 그리기 시작
 
+    // var MainTriangleValue = ((1080 - 980) / 2 ) + 980; 
     var afterValuePosition = px * ((options.afterValue - options.axis.min) / (options.axis.max - options.axis.min));
     var valuePosition = px * ((options.value - options.axis.min) / (options.axis.max - options.axis.min));
 
-    var trianglesCenter = afterValuePosition - valuePosition;
+    var trianglesCenter = ((afterValuePosition - valuePosition) / 2 ) + valuePosition;
 
-    if(trianglesCenter > 100) {
+    if(((afterValuePosition - valuePosition) / 2) > 50) {
 
       trianglesCenter -= 15;
 
@@ -327,7 +328,7 @@ var singleLinePriceChart = function(options) {
     .append('polygon')
     .attr('points', function() {
       var center = px * ((options.value - options.axis.min) / (options.axis.max - options.axis.min));
-      return center + ',' + (axisY - 5) + ' ' + (center - 13) + ',' + (axisY - 25) + ' ' + (center + 13) + ',' + (axisY - 25);
+      return center + ',' + (axisY - 5) + ' ' + (center - 10) + ',' + (axisY - 20) + ' ' + (center + 10) + ',' + (axisY - 20);
     })
     .attr('fill', options.color.active);
     // 사전예약 가격(pin) 그리기
@@ -338,7 +339,7 @@ var singleLinePriceChart = function(options) {
     .attr("x", function() {
       return px * ((options.value - options.axis.min) / (options.axis.max - options.axis.min)) + 'px';
     })
-    .attr("y", axisY - 30)
+    .attr("y", axisY - 25)
     .attr("font-family", "sans-serif")
     .attr("font-size", "18px")
     .attr("fill", options.color.active)
