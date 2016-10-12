@@ -1,9 +1,4 @@
 # singleLinePrice-chart-majac
-<p>
-For use Bakcha Company app &amp; web
-</p>
-<h1>Single Line Price Chart</h1>
-
 <h2>Introduce</h2>
 <p>
   - Dependency : <a href="http://jquery.com/" target="_blank">Jquery</a>, <a href="https://d3js.org/" target="">D3</a>

@@ -1,0 +1,98 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'publish' ]
+2 info using npm@3.6.0
+3 info using node@v5.6.0
+4 verbose publish [ '.' ]
+5 silly cache add args [ '.', null ]
+6 verbose cache add spec .
+7 silly cache add parsed spec Result {
+7 silly cache add   raw: '.',
+7 silly cache add   scope: null,
+7 silly cache add   name: null,
+7 silly cache add   rawSpec: '.',
+7 silly cache add   spec: '/Users/MAJAC/Documents/Project/majac/singleLinePrice-chart-majac',
+7 silly cache add   type: 'directory' }
+8 verbose addLocalDirectory /Users/MAJAC/.npm/single-chart-majac/1.0.1/package.tgz not in flight; packing
+9 verbose correctMkdir /Users/MAJAC/.npm correctMkdir not in flight; initializing
+10 info lifecycle single-chart-majac@1.0.1~prepublish: single-chart-majac@1.0.1
+11 silly lifecycle single-chart-majac@1.0.1~prepublish: no script for prepublish, continuing
+12 verbose tar pack [ '/Users/MAJAC/.npm/single-chart-majac/1.0.1/package.tgz',
+12 verbose tar pack   '/Users/MAJAC/Documents/Project/majac/singleLinePrice-chart-majac' ]
+13 verbose tarball /Users/MAJAC/.npm/single-chart-majac/1.0.1/package.tgz
+14 verbose folder /Users/MAJAC/Documents/Project/majac/singleLinePrice-chart-majac
+15 verbose addLocalTarball adding from inside cache /Users/MAJAC/.npm/single-chart-majac/1.0.1/package.tgz
+16 verbose correctMkdir /Users/MAJAC/.npm correctMkdir not in flight; initializing
+17 silly cache afterAdd single-chart-majac@1.0.1
+18 verbose afterAdd /Users/MAJAC/.npm/single-chart-majac/1.0.1/package/package.json not in flight; writing
+19 verbose correctMkdir /Users/MAJAC/.npm correctMkdir not in flight; initializing
+20 verbose afterAdd /Users/MAJAC/.npm/single-chart-majac/1.0.1/package/package.json written
+21 silly publish { name: 'single-chart-majac',
+21 silly publish   version: '1.0.1',
+21 silly publish   description: 'For bakcha App',
+21 silly publish   main: 'build/singleLinePrice-chart-majac.js',
+21 silly publish   scripts: { test: 'echo "Error: no test specified" && exit 1' },
+21 silly publish   repository:
+21 silly publish    { type: 'git',
+21 silly publish      url: 'git+https://github.com/majac6/singleLinePrice-chart-majac.git' },
+21 silly publish   keywords: [ 'single', 'price', 'chart' ],
+21 silly publish   author: '',
+21 silly publish   license: 'Bakcha Company',
+21 silly publish   bugs: { url: 'https://github.com/majac6/singleLinePrice-chart-majac/issues' },
+21 silly publish   homepage: 'https://github.com/majac6/singleLinePrice-chart-majac#readme',
+21 silly publish   readme: '# singleLinePrice-chart-majac\n<p>\nFor use Bakcha Company app &amp; web\n</p>\n<h1>Single Line Price Chart</h1>\n\n<h2>Introduce</h2>\n<p>\n  - Dependency : <a href="http://jquery.com/" target="_blank">Jquery</a>, <a href="https://d3js.org/" target="">D3</a>\n</p>\n\n<h2>How to get</h2>\n<p>\n  - NPM : npm i single-chart-majac<br/>\n</p>\n\n\n<h1>Bugfix</h1>\n<h2>16.10.12</h2>\n<p>\n  - static 차트에서 삼각형 표시 오류 수정<br/>\n</p>',
+21 silly publish   readmeFilename: 'README.md',
+21 silly publish   gitHead: 'd525d8fcdbcddf59bcc1827d61a921d0d843dad1',
+21 silly publish   _id: 'single-chart-majac@1.0.1',
+21 silly publish   _shasum: '3df96315f5adc3ffc99611032953a9a7d1e9ecab',
+21 silly publish   _from: '.' }
+22 verbose getPublishConfig undefined
+23 silly mapToRegistry name single-chart-majac
+24 silly mapToRegistry using default registry
+25 silly mapToRegistry registry https://registry.npmjs.org/
+26 silly mapToRegistry uri https://registry.npmjs.org/single-chart-majac
+27 verbose publish registryBase https://registry.npmjs.org/
+28 silly publish uploading /Users/MAJAC/.npm/single-chart-majac/1.0.1/package.tgz
+29 verbose request uri https://registry.npmjs.org/single-chart-majac
+30 verbose request sending authorization for write operation
+31 info attempt registry request try #1 at 14:28:49
+32 verbose request using bearer token for auth
+33 verbose request id 94a28efabd5209fe
+34 http request PUT https://registry.npmjs.org/single-chart-majac
+35 http 403 https://registry.npmjs.org/single-chart-majac
+36 verbose headers { 'content-type': 'application/json',
+36 verbose headers   'cache-control': 'max-age=300',
+36 verbose headers   'content-length': '95',
+36 verbose headers   'accept-ranges': 'bytes',
+36 verbose headers   date: 'Wed, 12 Oct 2016 05:28:51 GMT',
+36 verbose headers   via: '1.1 varnish',
+36 verbose headers   connection: 'keep-alive',
+36 verbose headers   'x-served-by': 'cache-hkg6821-HKG',
+36 verbose headers   'x-cache': 'MISS',
+36 verbose headers   'x-cache-hits': '0',
+36 verbose headers   'x-timer': 'S1476250130.332275,VS0,VE1420',
+36 verbose headers   vary: 'Accept-Encoding' }
+37 verbose request invalidating /Users/MAJAC/.npm/registry.npmjs.org/single-chart-majac on PUT
+38 error publish Failed PUT 403
+39 verbose stack Error: "You cannot publish over the previously published version 1.0.1." : single-chart-majac
+39 verbose stack     at makeError (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:264:12)
+39 verbose stack     at CachingRegistryClient.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:252:14)
+39 verbose stack     at Request._callback (/usr/local/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:172:14)
+39 verbose stack     at Request.self.callback (/usr/local/lib/node_modules/npm/node_modules/request/request.js:198:22)
+39 verbose stack     at emitTwo (events.js:100:13)
+39 verbose stack     at Request.emit (events.js:185:7)
+39 verbose stack     at Request.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:1035:10)
+39 verbose stack     at emitOne (events.js:95:20)
+39 verbose stack     at Request.emit (events.js:182:7)
+39 verbose stack     at IncomingMessage.<anonymous> (/usr/local/lib/node_modules/npm/node_modules/request/request.js:962:12)
+40 verbose statusCode 403
+41 verbose pkgid single-chart-majac
+42 verbose cwd /Users/MAJAC/Documents/Project/majac/singleLinePrice-chart-majac
+43 error Darwin 16.0.0
+44 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "publish"
+45 error node v5.6.0
+46 error npm  v3.6.0
+47 error code E403
+48 error "You cannot publish over the previously published version 1.0.1." : single-chart-majac
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]
