@@ -7,7 +7,7 @@ var singleLinePriceChart = function(options) {
   .attr('id', options.thisID)
   .style('display', 'table')
   .style('margin', 'auto')
-  .style('overflow', 'auto');
+  .style('overflow', 'visible');
   // 그래프에 기본이 되는 메인 svg 선언함.
 
   var axisArg = []
