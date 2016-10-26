@@ -1,6 +1,6 @@
 {
   "name": "single-chart-majac",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "For bakcha App",
   "main": "build/singleLinePrice-chart-majac.js",
   "scripts": {
@@ -13,12 +13,18 @@
   "keywords": [
     "single",
     "price",
-    "chart"
+    "chart",
+    "majac",
+    "마작"
   ],
   "author": "",
-  "license": "MIT, Bakcha Company",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/majac6/singleLinePrice-chart-majac/issues"
   },
-  "homepage": "https://github.com/majac6/singleLinePrice-chart-majac#readme"
+  "homepage": "https://github.com/majac6/singleLinePrice-chart-majac#readme",
+  "dependencies": {
+    "d3": "^4.2.8",
+    "jquery": "^3.1.1"
+  }
 }
